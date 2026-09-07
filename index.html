@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Timothy Agboada | PhD Systems & AI Engineer</title>
-  <meta name="description" content="Portfolio of Timothy Agboada — PhD Researcher in Computational Modeling, Systems, and AI Engineering." />
+  <meta name="description" content="Portfolio of Timothy Agboada — PhD in Computational Data Science & Engineering. Ex-Amazon Robotics, AI Agents, HPC, and Distributed Systems." />
 
   <!-- Fonts & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,361 +27,293 @@
               800: '#0f172a',
               700: '#1e293b',
               border: '#1e293b',
-              glow: 'rgba(56, 189, 248, 0.15)'
             }
           }
         }
       }
     }
   </script>
-
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-space-950 text-slate-100 antialiased font-sans selection:bg-cyan-500 selection:text-black">
+<body class="bg-[#040711] text-slate-100 antialiased font-sans selection:bg-cyan-500 selection:text-black">
 
-  <!-- Ambient Light Effects -->
-  <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[600px] h-[300px] bg-cyan-500/10 blur-[130px] pointer-events-none -z-10"></div>
-  <div class="fixed top-20 right-10 w-[500px] h-[300px] bg-emerald-500/10 blur-[140px] pointer-events-none -z-10"></div>
+  <!-- Background Ambient Glow -->
+  <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[650px] h-[350px] bg-cyan-600/10 blur-[140px] pointer-events-none -z-10"></div>
+  <div class="fixed top-32 right-10 w-[550px] h-[350px] bg-emerald-600/10 blur-[150px] pointer-events-none -z-10"></div>
 
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
 
-    <!-- HERO SECTION -->
-    <header class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-space-border pb-10 mb-12">
+    <!-- HERO HEADER -->
+    <header class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 border-b border-space-border pb-10 mb-12">
       <div class="max-w-3xl">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono mb-4">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          PhD Candidate • Open to Research Scientist & Systems Internships
+          PhD Computational Data Science & Engineering • Ex-Amazon Robotics
         </div>
         <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
           Timothy Agboada
         </h1>
         <p class="mt-4 text-slate-300 text-base sm:text-lg leading-relaxed">
-          Doctoral researcher specializing in <span class="text-cyan-400 font-semibold">autonomous AI multi-agent workflows</span>, <span class="text-emerald-400 font-semibold">computational modeling</span>, and <span class="text-purple-400 font-semibold">scalable software systems</span>. Bridging rigorous algorithm design with production-grade engineering.
+          Doctoral researcher at <span class="text-white font-semibold">North Carolina A&T State University</span>. Specializing in <span class="text-cyan-400 font-medium">LLM orchestration & agentic workflows</span> (LangChain, LangGraph), <span class="text-emerald-400 font-medium">scalable HPC systems</span> (C++, OpenMP), and <span class="text-indigo-400 font-medium">applied AI modeling</span>.
         </p>
       </div>
 
-      <!-- Quick Action Buttons -->
-      <div class="flex sm:flex-row md:flex-col gap-3 w-full md:w-auto">
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap sm:flex-nowrap lg:flex-col gap-3 w-full lg:w-auto">
         <a href="mailto:tayagboada@gmail.com"
-           class="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm transition duration-200 shadow-lg shadow-cyan-500/25">
+           class="flex-1 lg:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm transition duration-200 shadow-lg shadow-cyan-500/20">
           <i data-lucide="mail" class="w-4 h-4"></i>
-          <span>Hire Me / Email</span>
+          <span>Get In Touch</span>
         </a>
+
+        <!-- Custom Styled GitHub Button with Hardcoded SVG -->
         <a href="https://github.com/Timothy-Agboada" target="_blank" rel="noopener noreferrer"
-           class="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-space-900 border border-space-border hover:border-slate-500 text-slate-200 text-sm font-semibold transition duration-200">
-          <i data-lucide="github" class="w-4 h-4"></i>
-          <span>GitHub Profile</span>
+           class="flex-1 lg:flex-none inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-slate-500 text-white font-semibold text-sm transition duration-200 shadow-md">
+          <svg class="w-4 h-4 fill-white shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/timothy-agboada-290603bb/" target="_blank" rel="noopener noreferrer"
+           class="flex-1 lg:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#0077b5]/15 hover:bg-[#0077b5]/25 border border-[#0077b5]/40 text-sky-400 font-semibold text-sm transition duration-200">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span>LinkedIn</span>
         </a>
       </div>
     </header>
 
-    <!-- PROOF-OF-COMPETENCY VALUE BAR -->
-    <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
-      <div class="p-5 rounded-2xl bg-space-900/60 border border-space-border/80 backdrop-blur">
-        <p class="text-xs font-mono text-slate-400 uppercase">Core Focus</p>
-        <p class="text-lg font-bold text-white mt-1">Autonomous Systems</p>
-        <span class="text-xs text-cyan-400 font-mono">LLM Agents & Tools</span>
+    <!-- PROVEN TRACK RECORD / EXPERIENCE STATS -->
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+      <div class="p-5 rounded-2xl bg-space-900/70 border border-space-border">
+        <p class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Industry Track</p>
+        <p class="text-base sm:text-lg font-bold text-white mt-1">Amazon Robotics</p>
+        <span class="text-xs text-amber-400 font-mono">+15% System Efficiency</span>
       </div>
-      <div class="p-5 rounded-2xl bg-space-900/60 border border-space-border/80 backdrop-blur">
-        <p class="text-xs font-mono text-slate-400 uppercase">HPC & Computation</p>
-        <p class="text-lg font-bold text-white mt-1">Parallel Systems</p>
-        <span class="text-xs text-emerald-400 font-mono">C++ / OpenMP / Modeling</span>
+      <div class="p-5 rounded-2xl bg-space-900/70 border border-space-border">
+        <p class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Research Track</p>
+        <p class="text-base sm:text-lg font-bold text-white mt-1">Weber State Univ.</p>
+        <span class="text-xs text-emerald-400 font-mono">+19% Server Speedup</span>
       </div>
-      <div class="p-5 rounded-2xl bg-space-900/60 border border-space-border/80 backdrop-blur">
-        <p class="text-xs font-mono text-slate-400 uppercase">Interactive Products</p>
-        <p class="text-lg font-bold text-white mt-1">Full-Stack React</p>
-        <span class="text-xs text-indigo-400 font-mono">Async Telemetry & UI</span>
+      <div class="p-5 rounded-2xl bg-space-900/70 border border-space-border">
+        <p class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Conference Talk</p>
+        <p class="text-base sm:text-lg font-bold text-white mt-1">IEEE IGARSS 2026</p>
+        <span class="text-xs text-cyan-400 font-mono">Remote Sensing VQA</span>
       </div>
-      <div class="p-5 rounded-2xl bg-space-900/60 border border-space-border/80 backdrop-blur">
-        <p class="text-xs font-mono text-slate-400 uppercase">Education</p>
-        <p class="text-lg font-bold text-white mt-1">PhD Student</p>
-        <span class="text-xs text-amber-400 font-mono">Grad 2026+ Ready</span>
-      </div>
-    </section>
-
-    <!-- BENTO GRID SHOWCASE -->
-    <section class="space-y-4">
-      <div class="flex items-center justify-between mb-2">
-        <h2 class="text-xl font-bold text-white flex items-center gap-2">
-          <i data-lucide="layers" class="w-5 h-5 text-cyan-400"></i> Featured Engineering Deployments
-        </h2>
-        <span class="text-xs font-mono text-slate-500">Production & Open Source Repositories</span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-
-        <!-- PROJECT 1: Autonomous Travel Planner (Featured Hero Card - 8 Cols) -->
-        <div class="md:col-span-8 bg-space-900 border border-space-border hover:border-cyan-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono font-medium">
-                <i data-lucide="cpu" class="w-3.5 h-3.5"></i> Multi-Agent Orchestration
-              </span>
-              <a href="https://github.com/Timothy-Agboada/Autonomous-Travel-Planner" target="_blank" rel="noopener noreferrer" class="text-slate-400 group-hover:text-cyan-400 transition">
-                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-              </a>
-            </div>
-
-            <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition">Autonomous Travel Planner</h3>
-            <p class="text-slate-300 text-sm mt-2 mb-5 leading-relaxed">
-              Autonomous reasoning system designed to decompose complex constraints into optimized schedules, dynamic API calls, and adaptive route solvers.
-            </p>
-
-            <!-- Visual Terminal & Workflow Preview Mockup -->
-            <div class="rounded-xl bg-space-950 border border-space-border p-4 font-mono text-xs overflow-hidden mb-6 shadow-inner">
-              <div class="flex items-center gap-1.5 border-b border-space-border/80 pb-2 mb-3">
-                <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
-                <span class="text-slate-500 ml-2 text-[11px]">agent_runtime_v2.py</span>
-              </div>
-              <div class="space-y-1.5 text-slate-400">
-                <p><span class="text-cyan-400">[Agent-Planner]</span> Query received &rarr; Parsing trip constraints</p>
-                <p><span class="text-emerald-400">[Search-Tool]</span> Scraped geo-nodes: 12 candidates found</p>
-                <p><span class="text-purple-400">[Optimizer]</span> Evaluated Pareto frontier for budget vs. transit time</p>
-                <p class="text-slate-200"><span class="text-amber-400">[Synthesis]</span> Output generated in 420ms &bull; 0 constraint violations</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-space-border">
-            <div class="flex flex-wrap gap-2 text-xs font-mono">
-              <span class="px-2.5 py-1 rounded bg-space-800 text-slate-300">Python</span>
-              <span class="px-2.5 py-1 rounded bg-space-800 text-slate-300">LangChain / Agents</span>
-              <span class="px-2.5 py-1 rounded bg-space-800 text-slate-300">Optimization</span>
-            </div>
-            <a href="https://github.com/Timothy-Agboada/Autonomous-Travel-Planner" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-cyan-400 hover:underline inline-flex items-center gap-1">
-              Inspect Repository <i data-lucide="code" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- PROJECT 2: EB2-NIW Evaluator (4 Cols) -->
-        <div class="md:col-span-4 bg-space-900 border border-space-border hover:border-emerald-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
-                <i data-lucide="scale" class="w-3.5 h-3.5"></i> Decision Engine
-              </span>
-              <a href="https://github.com/Timothy-Agboada/EB2-NIW-Evaluator" target="_blank" rel="noopener noreferrer" class="text-slate-400 group-hover:text-emerald-400 transition">
-                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-              </a>
-            </div>
-
-            <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition">EB2-NIW Evaluator</h3>
-            <p class="text-slate-300 text-xs mt-2 mb-5 leading-relaxed">
-              Algorithmic scoring system that models legal criteria, scholarly impact, and evidentiary thresholds under USCIS Dhanasar standards.
-            </p>
-
-            <!-- Visual Scoring Gauge Mockup -->
-            <div class="p-3.5 rounded-xl bg-space-950 border border-space-border font-mono text-xs mb-6">
-              <div class="flex justify-between items-center text-slate-300 mb-2">
-                <span>Eligibility Score</span>
-                <span class="text-emerald-400 font-bold">92.4% Match</span>
-              </div>
-              <div class="w-full bg-space-800 h-2 rounded-full overflow-hidden mb-2">
-                <div class="bg-gradient-to-r from-emerald-500 to-cyan-400 h-full w-[92%]"></div>
-              </div>
-              <p class="text-[11px] text-slate-500">Prong 1: Substantial Merit & National Importance [PASS]</p>
-            </div>
-          </div>
-
-          <div class="pt-4 border-t border-space-border flex items-center justify-between">
-            <div class="flex gap-1.5 text-[11px] font-mono">
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">Rule Engine</span>
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">Scoring Model</span>
-            </div>
-            <a href="https://github.com/Timothy-Agboada/EB2-NIW-Evaluator" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-emerald-400 hover:underline">
-              View Code &rarr;
-            </a>
-          </div>
-        </div>
-
-        <!-- PROJECT 3: React Personal Dashboard (6 Cols) -->
-        <div class="md:col-span-6 bg-space-900 border border-space-border hover:border-indigo-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono">
-                <i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i> Frontend Architecture
-              </span>
-              <a href="https://github.com/Timothy-Agboada/React-Personal-Dashboard" target="_blank" rel="noopener noreferrer" class="text-slate-400 group-hover:text-indigo-400 transition">
-                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-              </a>
-            </div>
-
-            <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition">Multi-Widget React Dashboard</h3>
-            <p class="text-slate-300 text-sm mt-2 mb-4 leading-relaxed">
-              Modular telemetry workspace integrating real-time REST API consumption, multi-state caching, persistent theme toggling, and productivity widgets.
-            </p>
-
-            <!-- Visual Widget Mockup -->
-            <div class="grid grid-cols-2 gap-2.5 p-3 rounded-xl bg-space-950 border border-space-border font-mono text-[11px] mb-4">
-              <div class="p-2 rounded bg-space-900 border border-space-border/60">
-                <span class="text-slate-500">Live Crypto</span>
-                <p class="text-cyan-400 font-bold mt-0.5">$68,420 <span class="text-[10px] text-emerald-400">+3.4%</span></p>
-              </div>
-              <div class="p-2 rounded bg-space-900 border border-space-border/60">
-                <span class="text-slate-500">Task Scheduler</span>
-                <p class="text-purple-400 font-bold mt-0.5">8 Tasks Active</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="pt-4 border-t border-space-border flex items-center justify-between">
-            <div class="flex flex-wrap gap-1.5 text-xs font-mono">
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">React.js</span>
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">Tailwind</span>
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">APIs</span>
-            </div>
-            <a href="https://github.com/Timothy-Agboada/React-Personal-Dashboard" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-indigo-400 hover:underline">
-              Inspect Source &rarr;
-            </a>
-          </div>
-        </div>
-
-        <!-- PROJECT 4: Music Player App (6 Cols) -->
-        <div class="md:col-span-6 bg-space-900 border border-space-border hover:border-pink-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-mono">
-                <i data-lucide="music" class="w-3.5 h-3.5"></i> Web Audio & Media
-              </span>
-              <a href="https://github.com/Timothy-Agboada/Music-Player-App" target="_blank" rel="noopener noreferrer" class="text-slate-400 group-hover:text-pink-400 transition">
-                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-              </a>
-            </div>
-
-            <h3 class="text-xl font-bold text-white group-hover:text-pink-400 transition">Interactive Music Player App</h3>
-            <p class="text-slate-300 text-sm mt-2 mb-4 leading-relaxed">
-              Custom audio playback interface engineered with precise audio state dispatchers, track sequencing, playlist buffering, and waveform timeline scrubbers.
-            </p>
-
-            <!-- Visual Audio Bar Mockup -->
-            <div class="p-3 rounded-xl bg-space-950 border border-space-border flex items-center gap-3 font-mono text-xs mb-4">
-              <button class="w-8 h-8 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center">
-                <i data-lucide="play" class="w-4 h-4 fill-pink-400"></i>
-              </button>
-              <div class="flex-1">
-                <div class="flex justify-between text-[10px] text-slate-500 mb-1">
-                  <span>Synthesizer Wave</span>
-                  <span>02:45 / 03:50</span>
-                </div>
-                <div class="w-full bg-space-800 h-1.5 rounded-full overflow-hidden">
-                  <div class="bg-pink-500 h-full w-[65%]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pt-4 border-t border-space-border flex items-center justify-between">
-            <div class="flex flex-wrap gap-1.5 text-xs font-mono">
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">JavaScript</span>
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">Web Audio API</span>
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">UI/UX</span>
-            </div>
-            <a href="https://github.com/Timothy-Agboada/Music-Player-App" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-pink-400 hover:underline">
-              View Source &rarr;
-            </a>
-          </div>
-        </div>
-
-        <!-- PROJECT 5: React Weather App (6 Cols) -->
-        <div class="md:col-span-6 bg-space-900 border border-space-border hover:border-amber-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-mono">
-                <i data-lucide="cloud-sun" class="w-3.5 h-3.5"></i> Geolocation & APIs
-              </span>
-              <a href="https://github.com/Timothy-Agboada/React-Weather-App" target="_blank" rel="noopener noreferrer" class="text-slate-400 group-hover:text-amber-400 transition">
-                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-              </a>
-            </div>
-
-            <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">Weather Telemetry Engine</h3>
-            <p class="text-slate-300 text-sm mt-2 mb-4 leading-relaxed">
-              Reactive meteorology application handling geolocation lookups, asynchronous meteorological forecasts, and dynamic visual condition rendering.
-            </p>
-
-            <!-- Visual Weather Preview -->
-            <div class="flex items-center justify-between p-3 rounded-xl bg-space-950 border border-space-border font-mono text-xs mb-4">
-              <div class="flex items-center gap-2">
-                <i data-lucide="sun" class="w-5 h-5 text-amber-400"></i>
-                <div>
-                  <p class="text-white font-bold">72°F Sunny</p>
-                  <p class="text-[10px] text-slate-500">Live coordinates synced</p>
-                </div>
-              </div>
-              <span class="text-emerald-400 text-[11px]">HTTP 200 OK</span>
-            </div>
-          </div>
-
-          <div class="pt-4 border-t border-space-border flex items-center justify-between">
-            <div class="flex flex-wrap gap-1.5 text-xs font-mono">
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">React</span>
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">OpenWeather API</span>
-            </div>
-            <a href="https://github.com/Timothy-Agboada/React-Weather-App" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-amber-400 hover:underline">
-              View Source &rarr;
-            </a>
-          </div>
-        </div>
-
-        <!-- PROJECT 6: Universal Converter App (6 Cols) -->
-        <div class="md:col-span-6 bg-space-900 border border-space-border hover:border-emerald-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
-                <i data-lucide="calculator" class="w-3.5 h-3.5"></i> Computation Tool
-              </span>
-              <a href="https://github.com/Timothy-Agboada/Universal-Converter-App" target="_blank" rel="noopener noreferrer" class="text-slate-400 group-hover:text-emerald-400 transition">
-                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-              </a>
-            </div>
-
-            <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition">Universal Converter Engine</h3>
-            <p class="text-slate-300 text-sm mt-2 mb-4 leading-relaxed">
-              Multi-unit conversion and algorithmic calculating tool built with zero-drift precision math for dimensional units, currencies, and scientific data.
-            </p>
-
-            <!-- Visual Formula Mockup -->
-            <div class="p-3 rounded-xl bg-space-950 border border-space-border font-mono text-xs flex justify-between items-center mb-4">
-              <span class="text-slate-400">1.0000 Radians</span>
-              <i data-lucide="repeat" class="w-3.5 h-3.5 text-emerald-400"></i>
-              <span class="text-emerald-400 font-bold">57.2958 Degrees</span>
-            </div>
-          </div>
-
-          <div class="pt-4 border-t border-space-border flex items-center justify-between">
-            <div class="flex flex-wrap gap-1.5 text-xs font-mono">
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">JavaScript</span>
-              <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">Numerical Precision</span>
-            </div>
-            <a href="https://github.com/Timothy-Agboada/Universal-Converter-App" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-emerald-400 hover:underline">
-              View Source &rarr;
-            </a>
-          </div>
-        </div>
-
+      <div class="p-5 rounded-2xl bg-space-900/70 border border-space-border">
+        <p class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Credentials</p>
+        <p class="text-base sm:text-lg font-bold text-white mt-1">AWS Certified</p>
+        <span class="text-xs text-indigo-400 font-mono">Data Engineer • PSM I</span>
       </div>
     </section>
 
-    <!-- CALL TO ACTION / HIRE SECTION -->
-    <section class="mt-16 p-8 rounded-3xl bg-gradient-to-b from-space-900 to-space-950 border border-cyan-500/30 text-center relative overflow-hidden">
+    <!-- BENTO GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+      <!-- TILE 1: EB2-NIW Evaluator (8 COLS) -->
+      <div class="md:col-span-8 bg-space-900 border border-space-border hover:border-emerald-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+              <i data-lucide="workflow" class="w-3.5 h-3.5"></i> Stateful Multi-Node Agent
+            </span>
+            <a href="https://github.com/Timothy-Agboada/EB2-NIW-Evaluator" target="_blank" rel="noopener noreferrer" class="text-slate-500 group-hover:text-emerald-400 transition">
+              <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition">Autonomous EB-2 NIW Immigration Evaluator</h2>
+          <p class="text-slate-300 text-sm mt-2 mb-5 leading-relaxed">
+            Stateful multi-node AI agent built with <strong>LangGraph</strong> and <strong>Gemini API</strong>. Parses candidate academic profiles against regulatory <em>Matter of Dhanasar</em> legal criteria to identify evidentiary gaps and generate synthesized petitions.
+          </p>
+
+          <!-- Interactive Terminal / Simulation Box -->
+          <div class="rounded-xl bg-space-950 border border-space-border p-4 font-mono text-xs mb-5 shadow-inner">
+            <div class="flex items-center gap-1.5 border-b border-space-border/80 pb-2 mb-3 text-slate-500 text-[11px]">
+              <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+              <span class="ml-2">evaluator_graph.py &bull; LangGraph Engine</span>
+            </div>
+            <div class="space-y-1.5 text-slate-400">
+              <p><span class="text-emerald-400">[Prong-1]</span> Evaluating Substantial Merit & National Importance: <span class="text-white">SATISFIED</span></p>
+              <p><span class="text-cyan-400">[Prong-2]</span> Evaluating Well-Positioned to Advance the Endeavor: <span class="text-white">PASS (94% confidence)</span></p>
+              <p><span class="text-purple-400">[Evidence-Node]</span> Citations and peer-review history verified against threshold</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-space-border flex flex-wrap items-center justify-between gap-3">
+          <div class="flex flex-wrap gap-1.5 text-xs font-mono">
+            <span class="px-2.5 py-1 rounded bg-space-800 text-slate-300">Python</span>
+            <span class="px-2.5 py-1 rounded bg-space-800 text-slate-300">LangGraph</span>
+            <span class="px-2.5 py-1 rounded bg-space-800 text-slate-300">Gemini API</span>
+            <span class="px-2.5 py-1 rounded bg-space-800 text-slate-300">Streamlit</span>
+          </div>
+          <a href="https://github.com/Timothy-Agboada/EB2-NIW-Evaluator" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-emerald-400 hover:underline inline-flex items-center gap-1">
+            Source Code <i data-lucide="code" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- TILE 2: Autonomous Travel Planner (4 COLS) -->
+      <div class="md:col-span-4 bg-space-900 border border-space-border hover:border-cyan-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono">
+              <i data-lucide="bot" class="w-3.5 h-3.5"></i> RAG & Agent Tools
+            </span>
+            <a href="https://github.com/Timothy-Agboada/Autonomous-Travel-Planner" target="_blank" rel="noopener noreferrer" class="text-slate-500 group-hover:text-cyan-400 transition">
+              <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+          </div>
+
+          <h2 class="text-xl font-bold text-white group-hover:text-cyan-400 transition">Autonomous Travel Planner</h2>
+          <p class="text-slate-300 text-xs mt-2 mb-4 leading-relaxed">
+            Multi-tool agent integrating live web search tools and constraint satisfaction models to autonomously schedule itineraries and export structured PDF documentation.
+          </p>
+
+          <div class="p-3.5 rounded-xl bg-space-950 border border-space-border font-mono text-xs mb-4">
+            <div class="flex justify-between text-slate-400 text-[11px] mb-1">
+              <span>Optimization Latency</span>
+              <span class="text-cyan-400">Sub-second synthesis</span>
+            </div>
+            <p class="text-[11px] text-slate-500">Real-time retrieval &bull; DuckDuckGo Search &bull; FPDF2</p>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-space-border flex items-center justify-between">
+          <div class="flex gap-1.5 text-[11px] font-mono">
+            <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">LangChain</span>
+            <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">Python</span>
+          </div>
+          <a href="https://github.com/Timothy-Agboada/Autonomous-Travel-Planner" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-cyan-400 hover:underline">
+            View Repo &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- TILE 3: Scalable Computing & Parallel OpenMP (6 COLS) -->
+      <div class="md:col-span-6 bg-space-900 border border-space-border hover:border-purple-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-mono">
+              <i data-lucide="cpu" class="w-3.5 h-3.5"></i> High-Performance Computing
+            </span>
+            <span class="text-xs font-mono text-slate-500">C++ / OpenMP</span>
+          </div>
+
+          <h2 class="text-xl font-bold text-white group-hover:text-purple-400 transition">Parallel Sort & Spatial Processing</h2>
+          <p class="text-slate-300 text-sm mt-2 mb-4 leading-relaxed">
+            Parallelized heap-sorting algorithms for high-throughput raster processing. Validated UAV photogrammetric Digital Elevation Models (DEMs) against ground-truth LiDAR with sub-decimeter accuracy.
+          </p>
+
+          <div class="p-3 rounded-xl bg-space-950 border border-space-border font-mono text-xs mb-4">
+            <div class="flex justify-between text-slate-300 text-[11px] mb-1">
+              <span>Parallel Speedup Benchmark</span>
+              <span class="text-purple-400 font-bold">+19% Server Scaling</span>
+            </div>
+            <div class="w-full bg-space-800 h-1.5 rounded-full overflow-hidden">
+              <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-full w-[85%]"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-space-border flex items-center justify-between">
+          <div class="flex flex-wrap gap-1.5 text-xs font-mono">
+            <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">C++</span>
+            <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">OpenMP</span>
+            <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">ArcGIS Pro</span>
+          </div>
+          <span class="text-xs font-mono text-purple-400">Research Project</span>
+        </div>
+      </div>
+
+      <!-- TILE 4: React Personal Dashboard (6 COLS) -->
+      <div class="md:col-span-6 bg-space-900 border border-space-border hover:border-indigo-500/50 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group shadow-xl">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono">
+              <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i> Frontend Architecture
+            </span>
+            <a href="https://github.com/Timothy-Agboada/React-Personal-Dashboard" target="_blank" rel="noopener noreferrer" class="text-slate-500 group-hover:text-indigo-400 transition">
+              <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+          </div>
+
+          <h2 class="text-xl font-bold text-white group-hover:text-indigo-400 transition">Multi-Widget React Dashboard</h2>
+          <p class="text-slate-300 text-sm mt-2 mb-4 leading-relaxed">
+            Personal developer dashboard featuring asynchronous telemetry consumption, persistent local storage, custom theme switching, and live cryptocurrency/weather widgets.
+          </p>
+
+          <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-space-950 border border-space-border font-mono text-[11px] mb-4">
+            <div class="p-2 rounded bg-space-900 border border-space-border/60">
+              <span class="text-slate-500">Live Feeds</span>
+              <p class="text-cyan-400 font-bold">Multi-API Polling</p>
+            </div>
+            <div class="p-2 rounded bg-space-900 border border-space-border/60">
+              <span class="text-slate-500">State Management</span>
+              <p class="text-indigo-400 font-bold">Custom Hooks</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-space-border flex items-center justify-between">
+          <div class="flex flex-wrap gap-1.5 text-xs font-mono">
+            <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">React.js</span>
+            <span class="px-2 py-0.5 rounded bg-space-800 text-slate-300">Tailwind CSS</span>
+          </div>
+          <a href="https://github.com/Timothy-Agboada/React-Personal-Dashboard" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-indigo-400 hover:underline">
+            View Source &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CORE TECHNICAL STACK -->
+    <section class="mt-12 p-8 rounded-2xl bg-space-900 border border-space-border">
+      <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400 mb-6 flex items-center gap-2">
+        <i data-lucide="terminal" class="w-4 h-4 text-cyan-400"></i> Technical Toolbox & Proficiencies
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs font-mono">
+        <div class="p-4 rounded-xl bg-space-950 border border-space-border">
+          <span class="text-cyan-400 font-bold block mb-1">AI & Agents</span>
+          <p class="text-slate-400">LangGraph, LangChain, RAG Pipelines, PyTorch, Scikit-learn</p>
+        </div>
+        <div class="p-4 rounded-xl bg-space-950 border border-space-border">
+          <span class="text-emerald-400 font-bold block mb-1">Languages</span>
+          <p class="text-slate-400">Python, C++, SQL, MATLAB, JavaScript, Java</p>
+        </div>
+        <div class="p-4 rounded-xl bg-space-950 border border-space-border">
+          <span class="text-purple-400 font-bold block mb-1">Systems & Cloud</span>
+          <p class="text-slate-400">OpenMP, AWS (S3, Lambda, Redshift, Glue), Docker, Kubernetes</p>
+        </div>
+        <div class="p-4 rounded-xl bg-space-950 border border-space-border">
+          <span class="text-amber-400 font-bold block mb-1">Geospatial / Analytics</span>
+          <p class="text-slate-400">ArcGIS Pro, Pix4Dmapper, Statistical Modeling, DBT</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="mt-12 p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-space-900 to-space-950 border border-cyan-500/30 text-center relative overflow-hidden shadow-2xl">
       <div class="max-w-xl mx-auto relative z-10">
-        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Interested in Interviewing Me?</h3>
-        <p class="text-slate-300 text-sm mt-3 mb-6">
-          I am actively reviewing opportunities for technical internships and research positions in systems engineering, AI agent architectures, and computational modeling.
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Let's Connect</h3>
+        <p class="text-slate-300 text-sm mt-3 mb-6 leading-relaxed">
+          Open to research scientist, ML engineering, and scalable software systems internship opportunities.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-3">
           <a href="mailto:tayagboada@gmail.com" class="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm transition">
-            Email Me Directly (tayagboada@gmail.com)
+            Email Me (tayagboada@gmail.com)
           </a>
-          <a href="https://github.com/Timothy-Agboada" target="_blank" class="px-6 py-3 rounded-xl bg-space-800 border border-space-border hover:border-slate-500 text-white font-medium text-sm transition">
-            Explore All 10+ Repositories
+          <a href="https://www.linkedin.com/in/timothy-agboada-290603bb/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-space-800 border border-space-border hover:border-slate-500 text-white font-medium text-sm transition">
+            Connect on LinkedIn
           </a>
         </div>
       </div>
@@ -389,9 +321,10 @@
 
     <!-- FOOTER -->
     <footer class="mt-16 pt-8 border-t border-space-border flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-4">
-      <p>© Timothy Agboada. Deployed seamlessly via GitHub Pages.</p>
+      <p>© Timothy Agboada • PhD Candidate</p>
       <div class="flex gap-4">
-        <a href="https://github.com/Timothy-Agboada" class="hover:text-slate-300 transition">GitHub</a>
+        <a href="https://github.com/Timothy-Agboada" target="_blank" class="hover:text-slate-300 transition">GitHub</a>
+        <a href="https://www.linkedin.com/in/timothy-agboada-290603bb/" target="_blank" class="hover:text-slate-300 transition">LinkedIn</a>
         <a href="mailto:tayagboada@gmail.com" class="hover:text-slate-300 transition">tayagboada@gmail.com</a>
       </div>
     </footer>
