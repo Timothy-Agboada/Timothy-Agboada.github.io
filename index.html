@@ -1,494 +1,248 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Timothy Agboada Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timothy Agboada | PhD Portfolio</title>
+  <meta name="description" content="Portfolio of Timothy Agboada — PhD Student in Computational Modeling, Systems, and AI Engineering." />
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="files/tim.jpeg" alt="" /></span>
-					<h1 id="logo"><a href="#">Timothy Agboada</a></h1>
-					<p>Welcome to the Hub</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Abilities</a></li>
-						<li><a href="#three">Projects</a></li>
-						<li><a href="#four">Contact</a></li>
-						<li><a href="files/Timothy.pdf" target="_blank">Resume</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-						<li><a href="https://scholar.google.com/citations?user=LiYWVrcAAAAJ&hl=en" target="_blank" class="icon brands fa-google"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/timothy-agboada-290603bb" target="_blank" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-						<li><a href="https://www.github.com/Timothy-Agboada" target="_blank"class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:tagboada@aggies.ncat.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-			</section>
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            surface: {
+              DEFAULT: '#07090e',
+              card: '#0d111a',
+              border: '#1e2638',
+              hover: '#2a344d',
+            }
+          }
+        }
+      }
+    }
+  </script>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#07090e] text-slate-200 antialiased font-sans selection:bg-cyan-500 selection:text-black">
 
-				<!-- Main -->
-					<div id="main">
+  <!-- Glow Backdrop -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-gradient-to-tr from-cyan-600/10 via-emerald-600/10 to-transparent blur-[120px] pointer-events-none -z-10"></div>
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>Doctoral Student</h2>
-										<p>In Computational Data Science and Engineering<br />
-										at North Carolina A&T State University.</p>
-									</header>
-									<p>Research has been done in the spaces of computer vision, remote sensing, natural disaster damage assessment, semantic segmentation, facial recognition, machine learning, UPPAAL, cyber physical systems, cloud computing, cybersecurity, and tropical matrices.</p>
-								</div>
-							</section>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Abilities</h3>
-									<p></p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Software Engineering</li>
-										<li class="icon solid fa-cubes">AI and ML</li>
-										<li class="icon solid fa-book">Data processing and visualization</li>
-										<li class="icon solid fa-coffee">APIs</li>
-										<li class="icon solid fa-cloud">Cloud</li>
-										<li class="icon solid fa-users">Agile and Scrum</li>
-									</ul>
-								</div>
-							</section>
+    <!-- Header / Hero Section -->
+    <header class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-b border-surface-border pb-10 mb-12">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono mb-4">
+          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          PhD Student • Seeking Tech & Research Internships
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+          Timothy Agboada
+        </h1>
+        <p class="mt-3 text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+          Doctoral researcher focused on <span class="text-white font-medium">computational modeling</span>, <span class="text-white font-medium">scalable parallel systems</span>, and applied <span class="text-white font-medium">deep learning</span>. Building intelligent multi-agent workflows and high-performance software.
+        </p>
+      </div>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-									<p>My Github portfolio covers projects relating to front-end development, back-end, full stack, scripting, software design patterns, and data engineering. Below are a few highlighted projects.</p>
-									<div class="features">
-										<article>
-											<a href="https://github.com/Timothy-Agboada/ETL-Data-Modeling-AstraDB" target="_blank" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>ETL Pipeline for Sales Data</h4>
-												<p>Designed an ETL pipeline to ingest and transform sales data, enabling real-time revenue insights.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://github.com/Timothy-Agboada/React-Personal-Dashboard" target="_blank" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>React Personal Dashboard</h4>
-												<p>App that provides live weather, crypo prices, date and time data. Built using React.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://public.tableau.com/shared/X58PY7GZM?:display_count=n&:origin=viz_share_link" target="_blank" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>COVID Impact Dashboard</h4>
-												<p>Developed a real-time dashboard analyzing COVID-19’s socioeconomic impact using live data feeds.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://github.com/Timothy-Agboada/Advertisement-Click-Through-Rate" target="_blank" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Customer Segmentation Model </h4>
-												<p>Built a predictive clustering model to classify customers, improving targeted marketing by 20%.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+      <div class="flex items-center gap-3 w-full md:w-auto">
+        <a href="https://github.com/Timothy-Agboada" target="_blank" rel="noopener noreferrer"
+           class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-card border border-surface-border hover:border-slate-500 text-slate-200 text-sm font-medium transition duration-200">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:contact@timothyagboada.com"
+           class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm transition duration-200 shadow-lg shadow-cyan-500/20">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </header>
 
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Do not hesitate to get in touch towards collaborations or any queries.</p>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section>
+    <!-- Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
 
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
+      <!-- Tile 1: Flagship Agent (Autonomous Travel Planner) - 8 cols -->
+      <div class="md:col-span-8 bg-surface-card border border-surface-border hover:border-surface-hover rounded-2xl p-7 transition duration-300 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono">
+              <i data-lucide="bot" class="w-3.5 h-3.5"></i> Multi-Agent Architecture
+            </span>
+            <a href="https://github.com/Timothy-Agboada/Autonomous-Travel-Planner" target="_blank" rel="noopener noreferrer"
+               class="text-slate-500 group-hover:text-white transition">
+              <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+          </div>
 
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
+          <h2 class="text-2xl font-bold text-white mb-2 group-hover:text-cyan-400 transition">Autonomous Travel Planner</h2>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Autonomous multi-agent travel planning system built to orchestrate complex reasoning, real-time external tool retrieval, budget constraints, and dynamic scheduling.
+          </p>
+        </div>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+        <div class="p-4 rounded-xl bg-[#07090e] border border-surface-border font-mono text-xs text-slate-400 mb-6 space-y-2">
+          <div class="flex justify-between items-center text-slate-300 border-b border-surface-border pb-2">
+            <span>Agent Orchestration Pipeline</span>
+            <span class="text-emerald-400 font-medium">Status: Production Ready</span>
+          </div>
+          <p class="text-[11px] text-slate-500">Query Parsing &rarr; Route Optimization Engine &rarr; Constraint Solver &rarr; Dynamic Itinerary Synthesis</p>
+        </div>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
+        <div class="flex items-center justify-between pt-2 border-t border-surface-border/60">
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-surface-border/60 text-slate-300">Python</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-surface-border/60 text-slate-300">LLM Agents</span>
+            <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-surface-border/60 text-slate-300">API Integration</span>
+          </div>
+          <a href="https://github.com/Timothy-Agboada/Autonomous-Travel-Planner" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-cyan-400 hover:underline inline-flex items-center gap-1">
+            View Code <i data-lucide="code" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
 
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
+      <!-- Tile 2: Domain Evaluation Engine (EB2-NIW) - 4 cols -->
+      <div class="md:col-span-4 bg-surface-card border border-surface-border hover:border-surface-hover rounded-2xl p-7 transition duration-300 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Domain AI Engine
+            </span>
+            <a href="https://github.com/Timothy-Agboada/EB2-NIW-Evaluator" target="_blank" rel="noopener noreferrer"
+               class="text-slate-500 group-hover:text-white transition">
+              <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+          </div>
 
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
+          <h2 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition">EB2-NIW Evaluator</h2>
+          <p class="text-slate-400 text-xs leading-relaxed mb-6">
+            Algorithmic scoring system that models regulatory criteria and evidentiary thresholds to evaluate candidate eligibility under Matter of Dhanasar prongs.
+          </p>
+        </div>
 
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
+        <div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-border/60 text-slate-300">Rule Engines</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-border/60 text-slate-300">NLP</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-border/60 text-slate-300">Decision Modeling</span>
+          </div>
+          <a href="https://github.com/Timothy-Agboada/EB2-NIW-Evaluator" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-emerald-400 hover:underline inline-flex items-center gap-1">
+            Repository <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+      </div>
 
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
+      <!-- Tile 3: React Personal Dashboard - 6 cols -->
+      <div class="md:col-span-6 bg-surface-card border border-surface-border hover:border-surface-hover rounded-2xl p-7 transition duration-300 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono">
+              <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i> Frontend Architecture
+            </span>
+            <a href="https://github.com/Timothy-Agboada/React-Personal-Dashboard" target="_blank" rel="noopener noreferrer"
+               class="text-slate-500 group-hover:text-white transition">
+              <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+          </div>
 
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
+          <h2 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition">Multi-Widget React Dashboard</h2>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            Modular productivity workspace with async API polling, persistent state management, dynamic theme modes, and live data telemetry widgets.
+          </p>
+        </div>
 
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
+        <div class="pt-4 border-t border-surface-border/60 flex items-center justify-between">
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-border/60 text-slate-300">React.js</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-border/60 text-slate-300">REST APIs</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-border/60 text-slate-300">Tailwind CSS</span>
+          </div>
+          <a href="https://github.com/Timothy-Agboada/React-Personal-Dashboard" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-indigo-400 hover:underline">
+            View Source &rarr;
+          </a>
+        </div>
+      </div>
 
-								</div>
-							</section>
-						-->
+      <!-- Tile 4: React Pomodoro Timer - 6 cols -->
+      <div class="md:col-span-6 bg-surface-card border border-surface-border hover:border-surface-hover rounded-2xl p-7 transition duration-300 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-mono">
+              <i data-lucide="clock" class="w-3.5 h-3.5"></i> State Management & UX
+            </span>
+            <a href="https://github.com/Timothy-Agboada/React-Pomodoro-Timer" target="_blank" rel="noopener noreferrer"
+               class="text-slate-500 group-hover:text-white transition">
+              <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+          </div>
 
-					</div>
+          <h2 class="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition">Custom Pomodoro Productivity Engine</h2>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            High-precision interval timing application built with custom React lifecycle hooks, sound synthesize alerts, and seamless session tracking.
+          </p>
+        </div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+        <div class="pt-4 border-t border-surface-border/60 flex items-center justify-between">
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-border/60 text-slate-300">React</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-border/60 text-slate-300">Custom Hooks</span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-border/60 text-slate-300">Web Audio</span>
+          </div>
+          <a href="https://github.com/Timothy-Agboada/React-Pomodoro-Timer" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-amber-400 hover:underline">
+            View Source &rarr;
+          </a>
+        </div>
+      </div>
 
-			</div>
+      <!-- Tile 5: Core Technical Competencies - 12 cols -->
+      <div class="md:col-span-12 bg-surface-card border border-surface-border rounded-2xl p-7">
+        <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400 mb-5 flex items-center gap-2">
+          <i data-lucide="cpu" class="w-4 h-4 text-cyan-400"></i> Core Technical Stack & Research Tooling
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
+          <div class="p-3 rounded-xl bg-[#07090e] border border-surface-border flex items-center gap-2.5">
+            <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Python / PyTorch
+          </div>
+          <div class="p-3 rounded-xl bg-[#07090e] border border-surface-border flex items-center gap-2.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> C++ / OpenMP (HPC)
+          </div>
+          <div class="p-3 rounded-xl bg-[#07090e] border border-surface-border flex items-center gap-2.5">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span> React.js & Tailwind
+          </div>
+          <div class="p-3 rounded-xl bg-[#07090e] border border-surface-border flex items-center gap-2.5">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span> Computational Modeling
+          </div>
+        </div>
+      </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    </div>
 
-	</body>
+    <!-- Footer -->
+    <footer class="mt-16 pt-8 border-t border-surface-border flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-4">
+      <p>© Timothy Agboada. Deployed via GitHub Pages.</p>
+      <div class="flex gap-6">
+        <a href="https://github.com/Timothy-Agboada" class="hover:text-slate-300 transition">GitHub</a>
+        <a href="https://linkedin.com" class="hover:text-slate-300 transition">LinkedIn</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
 </html>
